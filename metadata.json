@@ -1,0 +1,6 @@
+{
+    "name": "Sparse Agenda Calendar",
+    "description": "Agenda Calendar for humans with sparse events",
+    "uuid": "sparse-agenda-calendar@polv.cc",
+    "shell-version": ["3.38"]
+}
