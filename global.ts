@@ -2,7 +2,7 @@ declare const imports: {
     ui: {
         calendar: {
             CalendarMessageList: any;
-            CalendarEvent: any;
+            CalendarEvent: CalendarEvent;
             MESSAGE_ICON_SIZE: any;
             NotificationMessage: any;
             NotificationSection: any;
@@ -14,7 +14,7 @@ declare const imports: {
             Placeholder: any;
             MSECS_IN_DAY: any;
             TimeLabel: any;
-            Calendar: any;
+            Calendar: any; // Native code
             sameYear: any;
             sameMonth: any;
             sameDay: any;
@@ -32,4 +32,14 @@ class Extension {
     metadata!: {
         name: string;
     };
+}
+
+class CalendarEvent {
+    constructor(
+        public id: any,
+        public date: any,
+        public end: any,
+        public summary: any,
+        public allDay: any
+    ) {}
 }

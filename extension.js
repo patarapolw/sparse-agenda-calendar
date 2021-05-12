@@ -26,7 +26,7 @@ const Me = ExtensionUtils.getCurrentExtension();
 
 function init() {
     log(`initializing ${Me.metadata.name}`);
-    log(Object.keys(imports.ui.calendar));
+    // log(imports.ui.calendar.Calendar);
 }
 
 function enable() {
